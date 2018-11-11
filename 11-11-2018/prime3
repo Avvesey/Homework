@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+long fact(int n){
+long res = 1;
+for (int i = 1; i <= n; i++) {
+	res = res * i;
+  }
+return res;
+
+}
+int main() {
+    int n,k;
+cin >> n;
+cin >> k;
+cout <<  fact(n)/(fact(k)*fact(n-k));
+return 0;
+}
