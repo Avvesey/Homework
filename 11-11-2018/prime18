@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+bool polindrom(string s){
+int n=0;
+int m = s.size() - 1;
+for(int i=0; i < s.size() ; i++){
+    if (s[n]==s[m]){
+ ++n;
+ ++m;
+
+    }
+    else {
+        return 0 ;
+    }
+}
+
+}
+int main() {
+string k;
+getline(cin, k);
+if (polindrom(k) !=0){
+    cout << "polindrom";
+}
+else {
+    cout << " no polindrom";
+}
+
+return 0;
+}
